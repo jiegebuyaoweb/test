@@ -3,3 +3,20 @@
   <title>test1</title>
 </head>
 <body>
+  <script>import React,{useState} from "react";
+  const LoginForm=()=>{
+      const [account,setAccount]=useState("");
+    
+      return (
+          <div>
+              <input type="text" onChange={(e)=>{setAccount(e.target.value)}}/>
+              <div>
+                  目前account:{account}
+              </div>
+          </div>
+      )
+  }
+
+  export default LoginForm;
+  </script>
+</body>
