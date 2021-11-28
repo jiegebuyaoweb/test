@@ -6,6 +6,10 @@
         var str=document.getElementById("input1").value;
         document.getElementById("input2").value = str;
     }
+
+    function uppercase(){
+        var box = document.querySelector('.box');
+        box.style.text-transform = "uppercase";
 </script>
 <title>test</title>
 </head>
@@ -19,7 +23,7 @@
     <input type="text" value="" name="user_name">
     <hr/>
     <h1>test2</h1>
-    <input type="text" value=""></input>
+    <input type="text" value="" class="type"></input>
     <button id="btn" onclick="uppercase()>uppercase</button>
 </body>
 </html>
