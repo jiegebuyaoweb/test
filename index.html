@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8"
-  <title>test</title>
+<script>
+    function cop(){
+        var str=document.getElementById("input1").value;
+        document.getElementById("input2").value = str;
+    }
+</script>
+<title>test</title>
 </head>
 <body>
-  <input type=text id='one' value='1'></input>
-  <input type=text id='two' value=''></input>
-  <script type="text/javascript">
-    var value = document.getElementById(‘one’).value
-    document.getElementById(‘two’).value = value;
-  </script>
+    <input id="input1" type="text" onpropertychange="cop()" οninput="cop()"/><br/>
+    <input id="input2" type="text"/>
 </body>
 </html>
