@@ -2,16 +2,23 @@
 <html>
 <head>
 <script>
+//test1
     function cop(){
         var str=document.getElementById("input1").value;
         document.getElementById("input2").value = str;
     }
 
+//test2
     function uppercase(){
-        var box = document.querySelector('.box');
-        box.style.text-transform = "uppercase";
+        var type = document.querySelector('.type');
+        type.style.text-transform = "uppercase";
     }
 </script>
+<style>
+    #btn{
+    background-color: #000000;
+    }
+</style>
 <title>test</title>
 </head>
 <body>
@@ -24,6 +31,7 @@
     <input type="text" value="" name="user_name">
     <hr/>
     <h1>test2</h1>
+    <h2>ex1</h2>
     <input type="text" value="" class="type"></input>
     <button id="btn" onclick="uppercase()>uppercase</button>
 </body>
